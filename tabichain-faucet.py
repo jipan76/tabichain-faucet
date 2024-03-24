@@ -49,11 +49,11 @@ if __name__ == '__main__':
                 if "success" in resp_text:
                     tx_id = resp_text.split(" ")[0]
                     logger.success(
-                        f"地址：{address} 领取成功，txId：{tx_id}")
+                        f"Address：{address} received successfully，txId：{tx_id}")
                     continue
-                logger.error(f"地址：{address} 领取失败，原因：{resp_text}")
+                logger.error(f"Address：{address} failed to receive, reason：{resp_text}")
             else:
-                logger.error(f"地址：{address} 发送领取请求失败，原因: {resp.text}")
+                logger.error(f"Address：{address} failed to send collection request, reason: {resp.text}")
         except Exception as e:
-            logger.error(f"发生异常：{e}")
+            logger.error(f"Exception occurred：{e}")
 
