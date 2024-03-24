@@ -1,17 +1,14 @@
-# tabichain领水脚本
+# Tabichain Faucet
 
-### 修改11行 nstproxy_频道 ，nstproxy_密码
+1. You Need NSTProxy
+Signup here [nstproxy]([https://app.nstproxy.com/register?i=sT9wug](https://app.nstproxy.com/register?i=tXGyNl) "nstproxy")
 
-新建文件 Add.Txt   
-格式Evm钱包地址一行一条
+2. Edit Add.Txt   
 1address
 2address
 3address
 
-[nstproxy邀请注册](https://app.nstproxy.com/register?i=sT9wug "nstproxy注册")
+3. Edit tabichain-faucet.py
+Fill proxy channel and password
 
-领水入口 https://faucet.testnet.tabichain.com/
-
-区块浏览器 https://testnet.tabiscan.com/
-
-![image](https://github.com/666-eth/tabichain-faucet/assets/77118877/e7bb83a3-dadd-4b25-bc22-800c570c3661)
+Run program
