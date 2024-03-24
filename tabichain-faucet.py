@@ -8,7 +8,7 @@ from loguru import logger
 import requests
 
 
-def get_proxy(nstproxy_channel="848CE8595BF5BB6E", nstproxy_password="dityapan76"):
+def get_proxy(nstproxy_channel="##", nstproxy_password="##"):
     session = ''.join(random.choice(string.digits + string.ascii_letters) for _ in range(10))
     return f"http://{nstproxy_channel}-residential-country_ANY-r_5m-s_{session}:{nstproxy_password}@gw-us.nstproxy.com:24125"
 
